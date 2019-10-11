@@ -23,7 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityProvider", "Identit
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{403D48C1-935A-428C-91E8-CE4B39849AD3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{A2D6437D-B1CF-4F69-9D2D-FA2216CA1366}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apis", "Apis", "{A2D6437D-B1CF-4F69-9D2D-FA2216CA1366}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Idp", "IdentityProvider\Idp\Idp.csproj", "{184C646F-690D-4003-AFE1-0B0E37E77AA0}"
 EndProject
@@ -39,13 +39,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Authen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Authorization", "AspNetCore.Authentication\src\Microsoft.AspNetCore.Authorization\Microsoft.AspNetCore.Authorization.csproj", "{84CFBE6A-3293-43D9-A085-94967193B834}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api1", "Api\Api1\Api1.csproj", "{561A56D9-89FD-4349-A980-2BF995992531}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api1", "Apis\Api1\Api1.csproj", "{561A56D9-89FD-4349-A980-2BF995992531}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientMvc1", "Clients\ClientMvc1\ClientMvc1.csproj", "{A3390CA2-5B5E-4003-9551-5E57E723D413}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientMvc1", "Clients\ClientMvc1\ClientMvc1.csproj", "{A3390CA2-5B5E-4003-9551-5E57E723D413}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D12B8998-B455-4C13-B194-FC6F33292EFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constants", "Constants\Constants\Constants.csproj", "{86624F95-5E2E-4C76-842C-D672DBC3DAFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Constants", "Constants\Constants\Constants.csproj", "{86624F95-5E2E-4C76-842C-D672DBC3DAFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
