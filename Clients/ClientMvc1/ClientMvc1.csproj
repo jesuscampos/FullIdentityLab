@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\AspNetCore.Authentication\src\Microsoft.AspNetCore.Authentication.Cookies\Microsoft.AspNetCore.Authentication.Cookies.csproj" />
+    <ProjectReference Include="..\..\AspNetCore.Authentication\src\Microsoft.AspNetCore.Authentication.OpenIdConnect\Microsoft.AspNetCore.Authentication.OpenIdConnect.csproj" />
+    <ProjectReference Include="..\..\AspNetCore.Authentication\src\Microsoft.AspNetCore.Authentication\Microsoft.AspNetCore.Authentication.csproj" />
+    <ProjectReference Include="..\..\AspNetCore.Authentication\src\Microsoft.AspNetCore.Authorization\Microsoft.AspNetCore.Authorization.csproj" />
+    <ProjectReference Include="..\..\Constants\Constants\Constants.csproj" />
+    <ProjectReference Include="..\..\IdentityServer\IdentityModel\src\IdentityModel.csproj" />
+  </ItemGroup>
+
+</Project>

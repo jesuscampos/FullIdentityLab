@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <Description>ASP.NET Core authentication handler to validate JWT and reference tokens from IdentityServer4</Description>
+    <Authors>Brock Allen;Dominick Baier</Authors>
+    <PackageId>IdentityServer4.AccessTokenValidation</PackageId>
+    <PackageTags>OAuth2;OAuth 2.0;OpenID Connect;Security;Identity;IdentityServer;Bearer tokens</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/IdentityServer/Artwork/master/Logos/IDserver_icon128.jpg</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation/blob/release/LICENSE</PackageLicenseUrl>
+    
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\AspNetCore.Authentication\src\Microsoft.AspNetCore.Authentication.JwtBearer\Microsoft.AspNetCore.Authentication.JwtBearer.csproj" />
+    <ProjectReference Include="..\..\..\AspNetCore.Authentication\src\Microsoft.AspNetCore.Authorization\Microsoft.AspNetCore.Authorization.csproj" />
+    <ProjectReference Include="..\..\IdentityModel.AspNetCore.OAuth2Introspection\src\IdentityModel.AspNetCore.OAuth2Introspection.csproj" />
+  </ItemGroup>
+</Project>
