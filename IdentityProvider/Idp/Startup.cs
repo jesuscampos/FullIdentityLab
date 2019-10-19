@@ -40,9 +40,9 @@ namespace Idp
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseIdentityServer();
-
             app.UseStaticFiles();
+
+            app.UseIdentityServer();
             
             app.UseMvcWithDefaultRoute();
         }

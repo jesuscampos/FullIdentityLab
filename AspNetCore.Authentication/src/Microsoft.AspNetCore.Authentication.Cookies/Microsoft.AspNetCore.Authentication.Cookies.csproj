@@ -9,6 +9,11 @@
     <PackageTags>aspnetcore;authentication;security</PackageTags>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="..\..\shared\Microsoft.AspNetCore.ChunkingCookieManager.Sources\**\*.cs" />
   </ItemGroup>

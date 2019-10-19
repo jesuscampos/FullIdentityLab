@@ -30,8 +30,11 @@ namespace Idp
                     
                     // scopes that client has access to
                     AllowedScopes = { "openid", "api1" },
-                    
+
                     RedirectUris = { "https://localhost:44346/signin-oidc" },
+                    AuthorizationCodeLifetime = 3600,
+                    IdentityTokenLifetime = 3600,
+                    
                     // AlwaysIncludeUserClaimsInIdToken = true,
                     // AllowOfflineAccess = true,
 

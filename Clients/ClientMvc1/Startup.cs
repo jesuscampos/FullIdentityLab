@@ -36,7 +36,10 @@ namespace ClientMvc1
                 options.DefaultScheme = "Cookies";
                 options.DefaultChallengeScheme = "oidc";
             })
-            .AddCookie("Cookies")
+            .AddCookie("Cookies", options => 
+            {
+                options.Cookie.Expiration = TimeSpan.FromSeconds(120);
+            })
             .AddOpenIdConnect("oidc", options =>
             {
                 options.SignInScheme = "Cookies";
@@ -44,8 +47,13 @@ namespace ClientMvc1
                 options.ClientId = "client";
                 options.ClientSecret = "secret";
                 options.ResponseType = "code id_token";
-                options.SaveTokens = false; //(*) aquí hay que hacer unas cuantas pruebas
+                options.SaveTokens = true; //(*) aquí hay que hacer unas cuantas pruebas
                 options.RequireHttpsMetadata = true;
+                options.Events.OnTicketReceived = async (context) => 
+                {
+                    context.Properties.ExpiresUtc = DateTime.UtcNow.AddSeconds(3600);
+                    context.Properties.IsPersistent = true;
+                };
 
                 // logout
                 // options.CallbackPath = null;
@@ -56,7 +64,7 @@ namespace ClientMvc1
                 // scopes
                 options.Scope.Clear();
                 options.Scope.Add("openid");
-                //options.Scope.Add("api1");
+                options.Scope.Add("api1");
 
                 // claims
                 // options.GetClaimsFromUserInfoEndpoint = false;

@@ -39,13 +39,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Authen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Authorization", "AspNetCore.Authentication\src\Microsoft.AspNetCore.Authorization\Microsoft.AspNetCore.Authorization.csproj", "{84CFBE6A-3293-43D9-A085-94967193B834}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api1", "Apis\Api1\Api1.csproj", "{561A56D9-89FD-4349-A980-2BF995992531}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api1", "Apis\Api1\Api1.csproj", "{561A56D9-89FD-4349-A980-2BF995992531}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientMvc1", "Clients\ClientMvc1\ClientMvc1.csproj", "{A3390CA2-5B5E-4003-9551-5E57E723D413}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D12B8998-B455-4C13-B194-FC6F33292EFD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Constants", "Constants\Constants\Constants.csproj", "{86624F95-5E2E-4C76-842C-D672DBC3DAFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcCookieClient", "Clients\MvcCookieClient\MvcCookieClient.csproj", "{9F65A176-4349-407A-8FE2-5155FF38818F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{86624F95-5E2E-4C76-842C-D672DBC3DAFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86624F95-5E2E-4C76-842C-D672DBC3DAFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86624F95-5E2E-4C76-842C-D672DBC3DAFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F65A176-4349-407A-8FE2-5155FF38818F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F65A176-4349-407A-8FE2-5155FF38818F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F65A176-4349-407A-8FE2-5155FF38818F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F65A176-4349-407A-8FE2-5155FF38818F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -138,6 +144,7 @@ Global
 		{561A56D9-89FD-4349-A980-2BF995992531} = {A2D6437D-B1CF-4F69-9D2D-FA2216CA1366}
 		{A3390CA2-5B5E-4003-9551-5E57E723D413} = {403D48C1-935A-428C-91E8-CE4B39849AD3}
 		{86624F95-5E2E-4C76-842C-D672DBC3DAFE} = {D12B8998-B455-4C13-B194-FC6F33292EFD}
+		{9F65A176-4349-407A-8FE2-5155FF38818F} = {403D48C1-935A-428C-91E8-CE4B39849AD3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3518B009-7F3D-44D8-9D43-DD09F24BEF24}
